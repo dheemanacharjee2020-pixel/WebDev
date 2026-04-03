@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            background-image: url('https://images.pexels.com/photos/35427325/pexels-photo-35427325.jpeg') ;
+            
+            background-position: center;
+            background-size: cover;
+            background-attachment:  fixed ;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Profile{
+            text-align: center;
+            background-color: aqua;
+            border: 1px solid brown;
+            margin: 25px;
+            padding : 15px;
+            border-radius: 12px;
+            box-shadow: 6px 5px 12px blue;
+            height : 300px;
+            width:400px;
+            
+        }
+
+        .Profile img{
+            object-fit: cover;
+            border-radius: 12px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .Profile h2{
+            font-family: monospace;
+            color: blueviolet;
+        }
+
+        .Profile h3{
+            font-family: monospace;
+            color: red;
+        }
+
+        .Profile p{
+            font-family: cursive;
+            color: brown;
+        }
+
+        .Profile button{
+            color: green;
+             background-color: orange;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .Profile button:hover{
+            transform: scale(1.02);
+            transition: 2s;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="Profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8BTaa3JJXNIScyUNayK9n9lLurERbIl_8g&s">
+        <h2>Name : Rakesh</h2>
+        <h3>Ocuupation : Student</h3>
+        <p>An aspiring engineer aiming to be software advances expert</p>
+        <button>Achievements</button>
+    </div>
+
+    <div class="Profile">
+        <img src="data:image/jpeg;base64,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">
+        <h2>Name : Rana</h2>
+        <h3>Ocuupation : Student</h3>
+        <p>An  Medical Enthusiasist aiming to be a Brain surgeon</p>
+        <button>Achievements</button>
+    </div>
+
+    <div class="Profile">
+        <img src="https://cdn.vectorstock.com/i/1000v/49/49/student-graduated-avatar-isolated-vector-11224949.jpg">
+        <h2>Name : Animesh</h2>
+        <h3>Ocuupation : Student</h3>
+        <p>An ambitiuos undergradute aiming to be a App Developer</p>
+        <button>Achievements</button>
+    </div>
+</body>
+</html>
