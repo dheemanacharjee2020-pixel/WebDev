@@ -3,22 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
+
+   <nav>
+    <button style="border-radius: 12px;   background-color: yellow;   padding: 20px;"><a href="home.html"><strong>- Previous page -</strong></a></button>
+   </nav>
+  </div>
+</nav>
+    <style>
+
+
+body{
+    background-color: aliceblue;
+}
+
+ #main{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px 2px darkgoldenrod;
+ }
+
+ .men{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    
+    gap:30px;
+
+ }
+
+ .prodc{
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 1px 3px blue;
+    background-color: lightgoldenrodyellow;
+ }
+
+   .prodc img{
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    
+
+ }
+
+ .prodc h3{
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+ }
+
+ .prodc p{
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ button{
+            border: none;
+            padding: 18px;
+            font-weight: bold;
+            background-color: orange;
+            border-radius: 12px;
+            
+            cursor: pointer;
+            
+        }
+        
+        button:hover{
+                   transform: scale(1.02);
+                   transition: 2s;
+        }
+
+
+    </style>
+    
 </head>
 <body>
-    <ol type="i">
-        <li><strong>Drip Coffee</strong></li><image src="https://images.pexels.com/photos/5461667/pexels-photo-5461667.jpeg" height="100" width="100"></image>
-        <hr>
-        <li><strong>Coffee Au Lait</strong></li><image src="https://images.pexels.com/photos/14084503/pexels-photo-14084503.jpeg" height="100" width="100"></image>
-        <hr>
-        <li><strong>Espresso</strong></li><image src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg" height="100" width="100"></image>
-        <hr>
-        <li><strong>Cappuccino</strong></li><image src="https://images.pexels.com/photos/374147/pexels-photo-374147.jpeg" height="100" width="100"></image>
-        <hr>
-        <li><strong>Flavoured Crossiants</strong></li><image src="images.jpg" height="100" width="100"></image>
-        <hr>
-        <li><strong>Brisk donut</strong>></li><image src="https://images.pexels.com/photos/3274104/pexels-photo-3274104.jpeg" height="100" width="100"></image>
-        <hr>
-    </ol>
+    <h1 id="main">Menu - Cafe Inglide</h1>
+    <br>
+    <div class="men">
+
+        <div class="prodc">
+            <h3>Drip Coffee</h3>
+            <img src="https://images.pexels.com/photos/27452125/pexels-photo-27452125.jpeg">
+            <p>Price : 2.10$</p>    
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="prodc">
+            <h3>Americano</h3>
+            <img src="https://images.pexels.com/photos/5253025/pexels-photo-5253025.jpeg">
+            <p>Price : 3.30$</p>   
+            <button>Add to Cart</button> 
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Cafe Latte</h3>
+            <img src="https://images.pexels.com/photos/36848520/pexels-photo-36848520.jpeg">
+            <p>Price :3.10$</p>  
+            <button>Add to Cart</button>  
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Cappucino</h3>
+            <img src="https://images.pexels.com/photos/29650855/pexels-photo-29650855.jpeg">
+            <p>Price : 3.50$</p> 
+            <button>Add to Cart</button>   
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Flat White</h3>
+            <img src="G.jpg">
+            <p>Price : 3.95$</p>  
+            <button>Add to Cart</button>  
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Espresso</h3>
+            <img src="https://images.pexels.com/photos/26626462/pexels-photo-26626462.jpeg">
+            <p>Price : 2.95$</p> 
+            <button>Add to Cart</button>   
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Machiato</h3>
+            <img src="https://images.pexels.com/photos/22221942/pexels-photo-22221942.jpeg">
+            <p>Price : 3.95$</p>  
+            <button>Add to Cart</button>  
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Mocha</h3>
+            <img src="https://images.pexels.com/photos/30299810/pexels-photo-30299810.jpeg">
+            <p>Price : 3.95$</p>
+            <button>Add to Cart</button>    
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Flavoured Latte</h3>
+            <img src="https://images.pexels.com/photos/3504556/pexels-photo-3504556.jpeg">
+            <p>Price : 3.15$</p>    
+            <button>Add to Cart</button>
+        </div>
+
+
+
+        <div class="prodc">
+            <h3>Chocolate shake</h3>
+            <img src="https://images.pexels.com/photos/28525199/pexels-photo-28525199.jpeg">
+            <p>Price : 3.45$</p>    
+            <button>Add to Cart</button>
+        </div>
+
+
+
+
+        <div class="prodc">
+            <h3>Matcha Latte</h3>
+            <img src="https://images.pexels.com/photos/12756666/pexels-photo-12756666.jpeg">
+            <p>Price : 3.95$</p>   
+            <button>Add to Cart</button> 
+        </div>
+
+
+        <div class="prodc">
+            <h3>Chai Latte</h3>
+            <img src="https://images.pexels.com/photos/5946641/pexels-photo-5946641.jpeg">
+            <p>Price : 3.50$</p>  
+            <button>Add to Cart</button>  
+        </div>
+
+
+        <div class="prodc">
+            <h3>Red Velvet Latte</h3>
+            <img src="https://images.pexels.com/photos/30694847/pexels-photo-30694847.jpeg">
+            <p>Price : 4.95$</p>   
+            <button>Add to Cart</button> 
+        </div>
+
+
+        <div class="prodc">
+            <h3>Flavoured Crossiant</h3>
+            <img src="https://images.pexels.com/photos/28871875/pexels-photo-28871875.jpeg">
+            <p>Price : 2.50$</p> 
+            <button>Add to Cart</button>   
+        </div>
+
+
+        <div class="prodc">
+            <h3>Boba</h3>
+            <img src="https://images.pexels.com/photos/11160112/pexels-photo-11160112.jpeg">
+            <p>Price : 5$</p>
+            <button>Add to Cart</button>    
+        </div>
+
+
+      
+    </div>
+
+
+    
+    
 </body>
 </html>
