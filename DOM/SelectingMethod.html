@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jss Day6 :[]</title>
+</head>
+<body>
+    <p id="xyz">Hello Guys</p>
+
+    <p id="abc"> Web Development </p>
+
+    <div class="myclass">AI Developer - 0</div>
+    <div class="myclass">ML Developer - 0</div>
+
+    <p>Plain simple paragraph</p>
+
+    <div class="box">Module 1</div>
+    <div class="box">Module 2</div>
+
+    <ul id="123">
+
+    </ul>
+    <script>
+        //Element -  Tag
+        //document = Webpage
+
+        //Selecting Method - Select means to Choose HTML Tag through JS
+        
+        //1. getelementbyid("Id Name value")
+
+         var ele = document.getElementById("xyz")
+        
+         console.log(ele)
+
+         var ele1 = document.getElementById("abc")
+
+         console.log(ele1)
+         console.log(ele1.textContent)
+
+
+         //2.getElementbyClassName
+
+         var ele2 = document.getElementsByClassName("myclass")
+
+         console.log(ele2)
+
+         console.log(ele2[1])
+
+         console.log(ele2[1].textContent)
+
+         //3. Tag without id and class  - TagName
+
+         var ele3 = document.getElementsByTagName("p")
+
+         console.log(ele3)
+
+         console.log(ele3[2])
+
+         console.log(ele3[2].textContent)
+
+        //4. queryselector - FOLLOW  THE RULES OF CSS SELECTOR - #IDNAME  , .CLASSNAME , TAGNAME
+
+        const xyz = document.querySelector(".box")
+
+        console.log(xyz);
+
+
+        //queryselectorALL
+
+        const pqr = document.querySelectorAll(".box")
+
+        console.log(pqr)
+        console.log(pqr[0].textContent)
+
+        //CreateElement - li tag
+        const ul = document.getElementById("123")
+
+      const list =   document.createElement("li")
+      list.textContent = "Water"
+
+      ul.appendChild(list)
+      
+      
+    </script>
+</body>
+</html>
