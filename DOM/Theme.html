@@ -6,20 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="bnt">🌙</button>
+    <button id="bnt" onclick="theme()">🌙</button>
 
     <script>
-         function theme(){
-            const button = document.getElementById("bnt")
-
-            button.textContent = "☀️"
-
-            
-            document.body.style.backgroundColor = "black"
-
-
+         const button = document.getElementById('bnt')
+         function lighttheme(){
+            button.innerHTML = '☀️'
+            document.body.style.backgroundColor = 'black'
          }
-         theme()
+
+          function darktheme(){
+            button.innerHTML = '🌙'
+            document.body.style.backgroundColor = 'white'
+         }
+
+
+        function theme(){
+            
+                if(button.innerHTML === '🌙'){
+             lighttheme()
+         }else{
+            darktheme()
+         }
+             
+        }
+
+
+         
     </script>
 </body>
 </html>
