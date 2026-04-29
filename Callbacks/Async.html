@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Async - Multiple tasks at the same time
+
+    //Task 1 : Make Coffee
+
+    
+    function startTask(){
+        console.log('Step 1: Boil water ..... 5 seconds')
+
+        //setTimeout(function , time) - Add a timer to function 1000  means 1 sec
+
+        setTimeout(function(){
+            console.log("Step 2 : Water is ready")
+        } , 5000)
+
+        console.log("Step 3 : Doing Other Task")
+    }
+
+    startTask()
+
+    function secondTask(){
+        console.log("Hello Everyone")
+    }
+    secondTask()
+    </script>
+</body>
+</html>
