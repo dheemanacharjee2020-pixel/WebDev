@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src ="" id = "pop">
+    <script>
+
+        var ie = document.getElementById("pop")
+
+       fetch('https://api.thecatapi.com/v1/images/search')
+
+       .then(response => response.json())
+         .then(data => {
+            const dt = data[0]
+            const cat = dt.url
+
+            ie.src=cat
+         })
+
+       .catch(error => console.log("Error Connecting " , error))
+
+     
+       
+       
+
+    </script>
+</body>
+</html>
