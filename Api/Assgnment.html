@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h1{
+        text-align: center;
+        font-family: monospace;
+        font-weight: bolder;
+
+       }
+       .final{
+        display: flex;
+        justify-content: center;
+       }
+       #pf1{
+        background-color: aquamarine;
+        color: black;
+        text-align: center;
+        border: 0 2px solid brown;
+        border-radius: 10px;
+        padding: 20px;
+        margin:15px;
+        height:250px;
+        width: 200px;
+
+       }
+      
+    </style>
+</head>
+<body>
+    <h1>Profile card Assignment</h1>
+    <div class="final">
+        <div id="pf1">
+
+        </div>
+    </div>
+
+        
+    
+    <script>
+        async function profileCard(){
+            let p1 = document.getElementById('pf1')
+           
+            p1.innerHTML = "Please Wait Loading Data . . . . 🔃"
+            
+            const fn = await fetch("https://randomuser.me/api") 
+            console.log(fn)
+            const data = await fn.json()
+            console.log(data)
+            const nmdata = data.results[0].name
+            console.log(nmdata)
+            const Name = ` ${nmdata.title}` + ` ${nmdata.first} ` +  ` ${nmdata.last} `
+            console.log(Name)
+            const gndata = data.results[0].gender
+            console.log(gndata)
+            const ctdata = data.results[0].location.city
+            console.log(ctdata)
+            const stdata = data.results[0].location.state
+            console.log(stdata)
+            const cndata = data.results[0].location.country
+            console.log(cndata)
+            const emdata = data.results[0].email
+            console.log(emdata)
+
+            p1.innerHTML = `
+            <h3>Name : ${Name}</h3>
+            <h4>Gender : ${gndata} </h4>
+            <p>Country : ${cndata} <br> City : ${ctdata} <br> State :${stdata} </p>
+            <p>Email : ${emdata}</p>
+            `
+            
+        
+            
+            
+            
+        }
+        profileCard()
+    </script>
+</body>
+</html>
